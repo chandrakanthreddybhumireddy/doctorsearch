@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doctor Search</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      h1{
+    text-align: center;
+    
+    
+}
+.main{
+  background-color: #c5dff8;
+}
+.about{
+  background-color: #12486b;
+}
+ul{
+    color: black;
+    font-size: large;
+    font-weight: 300;
+}
+a{
+    color: black;
+}
+.nav-item{
+    justify-content: center;
+}
+.home{
+    background-image: url("https://imgs.search.brave.com/Vn-1gvmWqWB1j35xBLtjhKz1gSdnm7EcZusjgybLnVg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9tZWRp/Y2luZS1kb2N0b3It/d3JpdGUtZWxlY3Ry/b25pYy1tZWRpY2Fs/LXJlY29yZC10YWJs/ZXQtZG5hLWRpZ2l0/YWwtaGVhbHRoY2Fy/ZS1uZXR3b3JrLWNv/bm5lY3Rpb24taG9s/b2dyYW0tbWVkaWNp/bmUtMTU0NzQyNDQ2/LmpwZw");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+header{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+p{
+    padding-left: 40px;
+    text-align: center;
+    padding-right: 50px;
+    color:  #030637;
+
+}
+div .logo{
+    display: flex;
+    align-items: center; /* Align items vertically */
+    white-space: 60px;
+  }
+
+ .btn-group{
+    display: flex;
+    justify-items: normal;
+ }
+ /* Add space between items */
+.item {
+    margin: 40px; /* Adjust the value based on your preference */
+  }
+  .back{
+    background-color: #cd5c08;
+  }
+ h2{
+  color: #332941;
+ }
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.containers {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #419197;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #030637;
+    line-height: 1.6;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.containerss {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #419197;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #030637 ;
+    line-height: 1.6;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        nav {
+            display: flex;
+            
+           background-color: #3e3232;
+           width: 100%;
+            
+           
+            
+            
+            
+        }
+
+        nav img {
+            height: 70px;
+            width: 100px;
+            display: block;
+            padding-left: 20px;
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            padding: 25px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            margin-top: 70px; /* Adjusted for the fixed navbar */
+            padding: 20px;
+        }
+        
+        
+        .result {
+            display: flex;
+            flex-wrap: wrap; 
+            padding-left: 20px;
+            
+        }
+        .results {
+            display: flex;
+            flex-wrap: wrap; 
+            padding-left: 20px;
+        }
+        .resul {
+            
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                border: 1px solid #ccc;
+                /* Adjust the maximum width as needed */
+                box-shadow: 5px 4px 8px rgba(62, 31, 146, 0.1); /* Optional: Add a subtle box shadow */
+              }
+              
+              .resul strong {
+                color: #333;
+                font-size: 18px;
+                margin-bottom: 5px; /* Optional: Add some margin below the name */
+              }
+              
+              .resul span {
+                color: #555;
+                font-size: 14px;
+              }
+              
+              .resul img {
+                max-width: 100%;
+                height: auto;
+                margin-top: 10px; /* Optional: Add some margin above the image */
+              }
+              .search-by-location {
+                max-width: 300px;
+                margin: 20px auto;
+                padding: 15px;
+                background-color: #f4f4f4;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                background-color: #beadfa;
+              }
+              .hi{
+                background-color: #dfccfb;
+              }
+              
+              label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+              }
+              
+              #locationInput {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+                border: 2px solid #3498db;
+                border-radius: 4px;
+                transition: border 0.3s ease;
+              }
+              
+              #locationInput:focus {
+                border-color: #007bb5;
+              }
+              
+              button {
+                background-color: #3498db;
+                color: #fff;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s ease;
+              }
+              
+              button:hover {
+                background-color: #007bb5;
+              }
+              .search-by-specialization {
+                max-width: 300px;
+                margin: 20px auto;
+                padding: 15px;
+                background-color: #f9f9f9;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                background-color: #bbab8c;
+              }
+              .hello{
+                background-color: #ded0b6;
+              }
+              
+              label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+              }
+              
+              #specialization {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+                border: 2px solid #3498db;
+                border-radius: 4px;
+                transition: border 0.3s ease;
+              }
+              
+              #specialization:focus {
+                border-color: #007bb5;
+              }
+              
+              button {
+                background-color: #3498db;
+                color: #fff;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s ease;
+              }
+              
+              button:hover {
+                background-color: #007bb5;
+              }
+              .search-by-doctors {
+                max-width: 300px;
+                margin: 20px auto;
+                padding: 15px;
+                background-color: #f9f9f9;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                background-color: #99bc85;
+              }
+              
+              label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+              }
+              
+              #namess {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+                border: 2px solid #3498db;
+                border-radius: 4px;
+                transition: border 0.3s ease;
+              }
+              
+              #namess:focus {
+                border-color: #007bb5;
+              }
+              
+              button {
+                background-color: #3498db;
+                color: #fff;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s ease;
+              }
+              
+              button:hover {
+                background-color: #007bb5;
+              }
+              .backs{
+                background-color: #bfd8af;
+              }
+              .contact-container {
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 20px;
+                background-color: #b9b4c7;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              }
+              .conta{
+                background-color: #5c5470;
+              }
+              footer{
+                
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+              }
+          
+             
+          
+              p {
+                color:  #030637;
+              }
+          
+              .contact-details {
+                margin-top: 20px;
+              }
+          
+              .contact-details div {
+                margin-bottom: 10px;
+              }
+          
+              .contact-details div span {
+                display: inline-block;
+                width: 150px;
+                font-weight: bold;
+              }
+              
+      body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#search {
+    background-color: skyblue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3367d6;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.results-container {
+    background-color: #095a7d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+}
+.results{
+  background-color: lightslategrey;
+}
+
+.results-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+
+    </style>
+  </head>
+  <body class="main">
+    <nav>
+      <img src="static/logo3.png" alt="Doctor Finder Logo">
+      <a href="#home">Home</a>
+      <a href="#searchs"> Search Doctors</a>
+      <a href="#specialists">Discover Specializations</a>
+      <a href="#aboutus">About Us</a>
+      <a href="#contactus">Contact Us</a>
+  </nav>
+      
+      <div>
+        <div class="home" id="home">
+        <header>
+         <h2>
+          Welcome to One Medical - Your Trusted Doctor Search Platform
+         </h2> 
+         
+      </header>
+      <p>Your health is our priority. Discover the best doctors in your area.</p>
+      <p>Are you in search of the right healthcare professional? Look no further! One Medical is your dedicated portal to finding experienced and reliable doctors.<br> We understand the importance of connecting you with healthcare providers who meet your specific needs, and we've designed our platform to make the search process easy and efficient.</p>
+      <img src="https://imgs.search.brave.com/t0TZFZmLSnteAa49cpr1XpsjC8Lk52PhjvT-8CIgpwU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5naXRlbS5jb20v/cGltZ3MvbS8zNDct/MzQ3NDg3M19kb2N0/b3JzLWdyb3VwLW51/cnNlLWhkLXBuZy1k/b3dubG9hZC5wbmc" class="img-fluid" alt="..." width="100%" height="auto">  
+      </div>
+      <header>
+        <h2 id="searchs">  Search Doctor </h2>
+    </header>
+    
+    <section id="search">
+        <form id="searchForm">
+            {% csrf_token %}
+            <label for="specialization">Search by Specialization:</label>
+            <input type="text" id="specialization" placeholder="Enter Specialization">
+    
+            <label for="location">Search by Location:</label>
+            <input type="text" id="location" placeholder="Enter Location">
+    
+            <button type="button" onclick="searchDoctors()">Search</button>
+        </form>
+    </section>
+    
+    <div id="results" class="results">
+        <!-- Display search results here -->
+    </div><br><br><hr>
+      <section id="specialists">
+        <h2><span>Discover Specializations</span></h2>
+        <p>Explore our Specializations, including cardiologists, dermatologists, family physicians, and more. We connect you with healthcare professionals who understand your specific needs.</p>
+    </section>
+    <div>
+      <!-- Example single danger button -->
+<div class="item back">
+  <button type="button" class="btn btn-dark dropdown-toggle item" data-bs-toggle="dropdown" aria-expanded="false">
+   Dermatology
+  </button >
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" >Cosmetic dermatology</a></li>
+    <li><a class="dropdown-item" >Pediatric Dermotology</a></li>
+    <li><a class="dropdown-item" >Dermatopathology</a></li>
+   
+  </ul>
+  <button type="button" class="btn btn-dark dropdown-toggle item" data-bs-toggle="dropdown" aria-expanded="false">
+    Cardiology
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" >Electrophysiology</a></li>
+    <li><a class="dropdown-item" >Heart Failure specialist</a></li>
+    <li><a class="dropdown-item" >Interventional Cardialogy</a></li>
+    
+  </ul>
+  <button type="button" class="btn btn-dark dropdown-toggle item" data-bs-toggle="dropdown" aria-expanded="false">
+    Orthopedics
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" >Sports Medicine</a></li>
+    <li><a class="dropdown-item">Orthopedic surgery</a></li>
+    <li><a class="dropdown-item" >Joint replacement</a></li>
+    
+  </ul>
+  <button type="button" class="btn btn-dark dropdown-toggle item" data-bs-toggle="dropdown" aria-expanded="false">
+    ENT(Ear,Nose,Throat)
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" >Rhinology</a></li>
+    <li><a class="dropdown-item" >Head and Neck Surgery</a></li>
+    <li><a class="dropdown-item" >Otology</a></li>
+    
+  </ul>
+  
+  <button type="button" class="btn btn-dark dropdown-toggle item" data-bs-toggle="dropdown" aria-expanded="false">
+    Pulmonology
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" >Sleep Medicine</a></li>
+    <li><a class="dropdown-item" >Critical Care Medicine</a></li>
+    <li><a class="dropdown-item" >Interventional Pulmonology</a></li>
+    
+  </ul>
+  
+ 
+  
+</div>
+<br><br>
+    </div><div class="about">
+    <div class="containers" id="aboutus">
+      <h1>About Us - One Medical</h1>
+      <p>
+          Welcome to One Medical, your trusted companion in finding the right healthcare professionals.
+          We understand the importance of connecting individuals with skilled specialists to address their specific health needs.
+      </p>
+      <p>
+          Our platform provides a seamless experience, allowing you to search for doctors based on specialization and location.
+          Whether you're looking for a cardiologist, dermatologist, family physician, or other specialists, we've got you covered.
+      </p>
+      <p>
+          At One Medical, we prioritize your well-being. Our network of healthcare professionals is dedicated to delivering
+          quality care, ensuring that you receive the attention and expertise you deserve.
+      </p>
+      <p>
+          Thank you for choosing One Medical. Your health is our priority, and we're here to assist you on your journey to
+          finding the right healthcare professionals.
+      </p>
+  </div>
+</div>
+<div class="conta">
+  <div class="contact-container" id="contactus">
+    <h2>Contact Us</h2>
+    <p>Feel free to reach out to us for any inquiries or feedback.</p>
+
+    <div class="contact-details">
+      <div><span>Email:</span> bhumireddg@example.com</div>
+      <div><span>Phone:</span> +91 6302041249</div>
+      <div><span>Address:</span> 123 Main Street, Gurijala</div>
+    </div>
+    </div>
+  </div>
+  
+  
+
+    <footer>
+      <p>&copy; 2024 One Medical. All rights reserved.</p>
+  </footer>
+      
+    
+    
+        <script>
+    // script.js
+ function searchDoctors() {
+    const specialization = document.getElementById('specialization').value.toLowerCase();
+    const location = document.getElementById('location').value.toLowerCase();
+
+
+    fetch(`/search_doctors/?specialization=${specialization}&location=${location}`)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => displayResults(data))
+    .catch(error => console.error('Error:', error));
+
+}
+function displayResults(doctors) {
+    console.log('Received data:', doctors); // Add this line to log the received data
+
+    const resultsContainer = document.getElementById('results');
+
+    // Clear previous results
+    resultsContainer.innerHTML = '';
+
+    if (doctors.length === 0) {
+        resultsContainer.innerHTML = 'No doctors found.';
+    } else {
+        // Display each doctor's information
+        doctors.forEach(doctor => {
+            const doctorInfo = document.createElement('div');
+            doctorInfo.innerHTML = `<img src="${doctor.image}" alt="${doctor.name} Image" height="${100}" width="${180}"><br>
+                <strong>${doctor.name}</strong> <br>(${doctor.specialization}) <br> ${doctor.location}<br>
+                <strong> Phone:</strong> ${doctor.phone}<br>
+                <strong>Email:</strong> ${doctor.email}<br>`;
+            resultsContainer.appendChild(doctorInfo);
+        });
+    }
+}
+
+</script>
+    
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
